@@ -3,40 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Вакансии | T-Bank Style</title>
+  <title>Вакансии | Job Board Portal</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <h1>Открытые вакансии</h1>
+      <div class="logo">T-Bank Jobs</div>
+      <nav class="nav">
+        <a href="#" class="nav-link">Все вакансии</a>
+        <a href="#" class="nav-link">Компаниям</a>
+        <a href="#" class="nav-link">Контакты</a>
+      </nav>
     </div>
   </header>
 
+  <section class="hero">
+    <div class="container">
+      <h1>Найдите свою идеальную работу</h1>
+      <p class="subtitle">Удалённо, в офисе или гибридно — выбирайте подходящую вакансию</p>
+      <div class="search-bar">
+        <input type="text" placeholder="Поиск по названию или навыку..." />
+        <button>🔍</button>
+      </div>
+    </div>
+  </section>
+
   <main class="main">
     <div class="container">
-      <div class="vacancy-list">
-        <a href="vacancies/Product-Lead-TWork.html" class="vacancy-card">
-          <h3>Product Lead TWork</h3>
-          <p>Уровень: Lead </p>
-          <p>Локация: Москва,Гибрид</p>
-          <p>Полный день</p>
-        </a>
+      <div class="filters">
+        <button class="filter-btn active">Все</button>
+        <button class="filter-btn">Frontend</button>
+        <button class="filter-btn">Design</button>
+        <button class="filter-btn">HR</button>
       </div>
 
-      <div class="contacts">
-        <h2>Связь с рекрутером</h2>
-        <p><strong>Иван Петров</strong></p>
-        <p>📧 ivan@company.com</p>
-        <p>📞 +7 (999) 123-45-67</p>
+      <div class="vacancy-grid">
+        <a href="vacancies/frontend-developer.html" class="vacancy-card">
+          <div class="card-header">
+            <h3>Frontend-разработчик</h3>
+            <span class="salary">от 180 000 ₽</span>
+          </div>
+          <p class="company">T-Bank • Удалённо</p>
+          <div class="tags">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Git</span>
+          </div>
+        </a>
+
+        <a href="vacancies/ux-designer.html" class="vacancy-card">
+          <div class="card-header">
+            <h3>UX/UI Дизайнер</h3>
+            <span class="salary">от 150 000 ₽</span>
+          </div>
+          <p class="company">T-Bank • Москва</p>
+          <div class="tags">
+            <span>Figma</span>
+            <span>Prototyping</span>
+            <span>User Research</span>
+          </div>
+        </a>
       </div>
     </div>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Компания. Все права защищены.</p>
+      <p>&copy; 2025 T-Bank. Все права защищены.</p>
     </div>
   </footer>
 </body>
